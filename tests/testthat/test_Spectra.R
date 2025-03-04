@@ -1992,3 +1992,11 @@ test_that("precursorMz<-,Spectra works", {
     precursorMz(a) <- c(12.3, 1.1, 34.3)
     expect_equal(precursorMz(a), c(12.3, 1.1, 34.3))
 })
+
+test_that("peaksData,Spectra works ", {
+    a <- sps_dda[1:3]
+    res <- peaksData(a)
+    expect_s4_class(res, "SimpleList")
+    res <- peaksData(a, return.type = "list")
+    expect_true(is.list(res))
+})

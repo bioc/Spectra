@@ -1,3 +1,9 @@
+# Spectra 1.16
+
+## Changes in 1.16.1
+
+- Add parameter `return.type` to `peaksData()`.
+
 # Spectra 1.15
 
 ## Changes in 1.15.13
