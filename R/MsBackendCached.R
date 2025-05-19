@@ -553,6 +553,11 @@ setReplaceMethod("polarity", "MsBackendCached", function(object, value) {
 })
 
 #' @rdname MsBackendCached
+setMethod("precScanNum", "MsBackendCached", function(object) {
+    spectraData(object, "precScanNum")[, 1L]
+})
+
+#' @rdname MsBackendCached
 setMethod("precursorCharge", "MsBackendCached", function(object) {
     spectraData(object, "precursorCharge")[, 1]
 })
