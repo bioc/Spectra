@@ -1,5 +1,10 @@
 # Spectra 1.18
 
+## Change in 1.18.2
+
+- Fix export for `MsBackendMzR`: ensure the precursor scan number for MSn data
+  is exported (spectra variable `"precScanNum"`).
+
 ## Change in 1.18.1
 
 - Add support for `precScanNum()` to `MsBackendCached`.
