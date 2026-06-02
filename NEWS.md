@@ -1,5 +1,12 @@
 # Spectra 1.21
 
+## Changes in 1.21.1
+
+- Add support for `dataStorageBasePath()` and `dataStorageBasePath<-` to
+  `MsBackendHdf5Peaks`.
+
+# Spectra 1.21
+
 ## Change 1.21.7
 
 - Add parameter `direction` to `shiftPeaks()` allowing to define whether peaks

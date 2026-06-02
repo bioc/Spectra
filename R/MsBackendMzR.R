@@ -214,13 +214,19 @@ setMethod("backendParallelFactor", "MsBackendMzR", function(object) {
     factor(dataStorage(object), levels = unique(dataStorage(object)))
 })
 
+setClassUnion("OnDiskBackends",
+              c("MsBackendMzR", "MsBackendHdf5Peaks"))
+
 #' @importFrom MsCoreUtils common_path
-setMethod("dataStorageBasePath", "MsBackendMzR", function(object) {
+#'
+#' @rdname hidden_aliases
+setMethod("dataStorageBasePath", "OnDiskBackends", function(object) {
     common_path(dataStorage(object))
 })
 
+#' @rdname hidden_aliases
 setReplaceMethod(
-    "dataStorageBasePath", "MsBackendMzR", function(object, value) {
+    "dataStorageBasePath", "OnDiskBackends", function(object, value) {
         ds <- dataStorage(object)
         ds <- gsub("\\", "/", ds, fixed = TRUE)
         value <- gsub("\\", "/", value, fixed = TRUE)
