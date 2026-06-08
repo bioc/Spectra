@@ -234,9 +234,8 @@ include in the returned \code{data.frame}. Defaults to
 the results should be returned as a \code{SimpleList} or as a \code{list}.
 Defaults to \code{return.type = "SimpleList"}.}
 
-\item{BPPARAM}{Parallel setup configuration. See \code{\link[BiocParallel:bpparam]{BiocParallel::bpparam()}}
-for more information. See also \code{\link[=processingChunkSize]{processingChunkSize()}} for more
-information on parallel processing.}
+\item{BPPARAM}{Parallel setup configuration. See \code{\link[=processingChunkSize]{processingChunkSize()}} and
+\code{\link[BiocParallel:bpparam]{BiocParallel::bpparam()}} for more information.}
 
 \item{initial}{For \code{tic()}: \code{logical(1)} whether the initially
 reported total ion current should be reported, or whether the

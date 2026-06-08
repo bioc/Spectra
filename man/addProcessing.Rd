@@ -156,11 +156,8 @@ splitted while it defaults to \code{f = processingChunkSize(object)} for
 \code{applyProcessing()} splitting thus the object by default into chunks
 depending on \code{\link[=processingChunkSize]{processingChunkSize()}}.}
 
-\item{BPPARAM}{Parallel setup configuration. See \code{\link[BiocParallel:bpparam]{BiocParallel::bpparam()}}
-for more information. This is passed directly to the
-\code{\link[=backendInitialize]{backendInitialize()}} method of the \link[=MsBackend-class]{MsBackend}. See also
-\code{\link[=processingChunkSize]{processingChunkSize()}} for additional information on parallel
-processing.}
+\item{BPPARAM}{Parallel setup configuration. See \code{\link[=processingChunkSize]{processingChunkSize()}} and
+\code{\link[BiocParallel:bpparam]{BiocParallel::bpparam()}} for more information.}
 
 \item{binSize}{For \code{bin()}: \code{numeric(1)} defining the size for the m/z bins.
 Defaults to \code{binSize = 1}.}

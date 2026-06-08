@@ -1,5 +1,10 @@
 # Spectra 1.21
 
+## Changes in 1.21.2
+
+- Improve documentation of `BPPARAM` parameter and description of the default
+  parallel processing setup.
+
 ## Changes in 1.21.1
 
 - Add support for `dataStorageBasePath()` and `dataStorageBasePath<-` to
